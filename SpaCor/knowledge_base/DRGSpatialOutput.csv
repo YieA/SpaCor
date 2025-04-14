@@ -1,0 +1,101 @@
+﻿cat,query,relations,entities
+Aggregation-count Query,Is it possible to obtain the count of UBahn in Großer Wannsee?,['UBahn'],['Großer Wannsee']
+Aggregation-count Query,Could you inform me about the number of Landstrassen in Schloß Pfaueninsel?,['Landstrassen'],['Schloß Pfaueninsel']
+Aggregation-count Query,Kindly inform me about the overall number of SBahn in Pfingstberg.,['SBahn'],['Pfingstberg']
+Aggregation-count Query,List the count of UBahnhof in Berliner Stadtforst Köpenick.,['UBahnhof'],['Berliner Stadtforst Köpenick']
+Aggregation-count Query,Kindly inform me about the aggregate count of Flaechen in Auguste-Vikoria-Krankenhaus.,['Flaechen'],['Auguste-Vikoria-Krankenhaus']
+Aggregation-count Query,How many WFlaechen does the Tonghuai Street go through?,['WFlaechen'],['Tonghuai Street']
+Aggregation-max Query,Which Flaechen reserve has the most significant overlap with Schlesischer Busch?,['Flaechen'],['Schlesischer Busch']
+Aggregation-max Query,Which Sehenswuerdreg has the most intersecting strassen?,"['Sehenswuerdreg', 'strassen']",[]
+Aggregation-max Query,"Among all PLZBoundaries, which one has the highest stream intersection density?",['PLZBoundaries'],[]
+Aggregation-max Query,"Among all Sehenswuerdreg, which one has the largest number of rivers and paths crossing one another?",['Sehenswuerdreg'],[]
+Aggregation-max Query,"Among all Flaechen, which one experiences the most intersections of roads?",['Flaechen'],[]
+Aggregation-max Query,Which Flaechen is crossed by the most number SBahn?,"['Flaechen', 'SBahn']",[]
+Aggregation-max Query,Which Flaechen encompasses the most extensive area where Krossinsee intersects?,['Flaechen'],['Krossinsee']
+Aggregation-max Query,In which Flaechen can you find the most WFlaechen?,"['Flaechen', 'WFlaechen']",[]
+Aggregation-max Query,"Among all WFlaechen, which one has the most convergence of roads.",['WFlaechen'],[]
+Aggregation-max Query,"Among all Flaechen, which one has the largest number of rivers and paths crossing one another?",['Flaechen'],[]
+Aggregation-max Query,Which Sehenswuerdreg has the most extensive overlap with (Insel im Habermannsee)?,['Sehenswuerdreg'],['(Insel im Habermannsee)']
+Aggregation-max Query,Which WStrassen junction has the largest number of strassen intersecting within its boundaries?,"['WStrassen', 'strassen']",[]
+Aggregation-max Query,"Among all Sehenswuerdreg, which one has the largest overlapping territory with Akademie der Künste?",['Sehenswuerdreg'],['Akademie der Künste']
+Aggregation-max Query,Which WFlaechen encompasses the most extensive area where Heinrich-von-Kleist-Park intersects?,['WFlaechen'],['Heinrich-von-Kleist-Park']
+Aggregation-max Query,Which Flaechen encompasses the most extensive area where Berliner Stadtforst Köpenick intersects?,['Flaechen'],['Berliner Stadtforst Köpenick']
+Aggregation-sum Query,I would like to know the total water area covered by all WFlaechen in Preußenpark.,['WFlaechen'],['Preußenpark']
+Aggregation-sum Query,Can you provide the combined area of all # in Rathaus Köpenick?,[],['Rathaus Köpenick']
+Aggregation-sum Query,I am interested in the aggregate water area of all Sehenswuerdreg in Böcklerpark.,['Sehenswuerdreg'],['Böcklerpark']
+Aggregation-sum Query,Can you tell me the total land area occupied by all Sehenswuerdreg in Musical-Theater?,['Sehenswuerdreg'],['Musical-Theater']
+Aggregation-sum Query,Can you provide the aggregate land area of all # in Volkspark Wilmersdorf?,[],['Volkspark Wilmersdorf']
+Aggregation-sum Query,Provide the sum of # in Grunewald.,[],['Grunewald']
+Aggregation-sum Query,What is the combined # in Freizeitpark Tegel?,[],['Freizeitpark Tegel']
+Aggregation-sum Query,Calculate the total length of all PLZBoundaries in Park am Buschkrug.,['PLZBoundaries'],['Park am Buschkrug']
+Aggregation-sum Query,I would like to know the total area of all WFlaechen in Jungfernheideteich.,['WFlaechen'],['Jungfernheideteich']
+Aggregation-sum Query,Aggregate the total area covered by Flaechen in Altes Museum.,['Flaechen'],['Altes Museum']
+Basic-area Query,I'm intrigued by the monumental size of Bundesrat (?) in Sehenswuerdreg.,['Sehenswuerdreg'],['Bundesrat (?)']
+Basic-area Query,Please tell me the area of Nordhafen Spandau in WFlaechen.,['WFlaechen'],['Nordhafen Spandau']
+Basic-area Query,Please enumerate the dimensions of Krumme Lanke in WFlaechen.,['WFlaechen'],['Krumme Lanke']
+Basic-area Query,Please provide insights into the expansive scope of Nikolassee in WFlaechen.,['WFlaechen'],['Nikolassee']
+Basic-area Query,Kindly inform me about the geographical area of Kanzleramt in Sehenswuerdreg.,['Sehenswuerdreg'],['Kanzleramt']
+Basic-area Query,Please tell me the surface area of Thielpark in Flaechen.,['Flaechen'],['Thielpark']
+Basic-area Query,What's the extent of Schloß Bellevue in Sehenswuerdreg?,['Sehenswuerdreg'],['Schloß Bellevue']
+Basic-area Query,Please tell me the area of Holländisches Viertel in Sehenswuerdreg.,['Sehenswuerdreg'],['Holländisches Viertel']
+Basic-area Query,Can you give me the size of Berliner Stadtforst Köpenick in Flaechen?,['Flaechen'],['Berliner Stadtforst Köpenick']
+Basic-area Query,I'm interested in the areal dimensions of Schloß Charlottenburg in Sehenswuerdreg.,['Sehenswuerdreg'],['Schloß Charlottenburg']
+Basic-direction Query,What's the approximate directional bearing between Körbelitz - Niegripp and Blumenthal (Mark)?,[],"['Körbelitz - Niegripp', 'Blumenthal (Mark)']"
+Basic-direction Query,I'm looking for directions from Klo to Reinsdorf.,[],"['Klo', 'Reinsdorf']"
+Basic-direction Query,How would you generally chart the course from Gerwisch to Shanghai Road?,[],"['Gerwisch', 'Shanghai Road']"
+Basic-direction Query,Can you guide me on the course bearing from Altes Museum to Wirtshaus Hasenheide?,[],"['Altes Museum', 'Wirtshaus Hasenheide']"
+Basic-direction Query,What route should I take from Bruchwitzstr. to Fehrbelliner Platz?,[],"['Bruchwitzstr.', 'Fehrbelliner Platz']"
+Basic-direction Query,Can you provide the pathway from Bestensee to Große Weinmeisterstr. (Potsdam)?,[],"['Bestensee', 'Große Weinmeisterstr. (Potsdam)']"
+Basic-direction Query,Map the direction from Wildpark West (F2.2) to Trattoria Petrocelli.,[],"['Wildpark West (F2.2)', 'Trattoria Petrocelli']"
+Basic-direction Query,Can you provide the compass heading from Kunz-Buntschuh-Str. to Suckow?,[],"['Kunz-Buntschuh-Str.', 'Suckow']"
+Basic-distance Query,Distance query: Finsterwalder Str. to Zhuangpai Road.,[],"['Finsterwalder Str.', 'Zhuangpai Road']"
+Basic-distance Query,About how far is it from Spandauer Str. (Falkensee) to (Am Teltowkanal)?,[],"['Spandauer Str. (Falkensee)', '(Am Teltowkanal)']"
+Basic-distance Query,What's the distance in kilometers between Armbrustweg and Mühlendamm (Brandenburg)?,[],"['Armbrustweg', 'Mühlendamm (Brandenburg)']"
+Basic-distance Query,Compute the distance between Premnitz and Monopolstr. for me.,[],"['Premnitz', 'Monopolstr.']"
+Basic-distance Query,Can you provide a rough estimate of the distance from Reetzow to F11 (Baumschulenstr. - Wilhelmstrand)?,[],"['Reetzow', 'F11 (Baumschulenstr. - Wilhelmstrand)']"
+Basic-distance Query,What is the rough distance between Neuglobsow - Rheinsberg and Willy-Brandt-Str.?,[],"['Neuglobsow - Rheinsberg', 'Willy-Brandt-Str.']"
+Basic-distance Query,Which way should I head from Britzer Allee to Am Dachsbau?,[],"['Britzer Allee', 'Am Dachsbau']"
+Basic-length Query,Please advise me on the exact length of Teltowkanal in WStrassen.,['WStrassen'],['Teltowkanal']
+Basic-length Query,Could you enumerate the length of S2 in SBahn?,['SBahn'],['S2']
+Basic-length Query,Please enumerate the dimensions of (B109) - Lübs in Landstrassen2.,['Landstrassen2'],['(B109) - Lübs']
+Basic-length Query,Could you provide the distance of Barth - Zingst in Landstrassen2?,['Landstrassen2'],['Barth - Zingst']
+Basic-length Query,Could you kindly furnish me with the length details of PLZBoundaries's 10781?,['PLZBoundaries'],['10781']
+Basic-length Query,"Please provide the exact extent of S46,S47 in SBahn.",['SBahn'],"['S46,S47']"
+Basic-length Query,Display all Gutenpaaren - Wachow that are 20 kilometer or longer.,[],['Gutenpaaren - Wachow']
+Basic-length Query,"How long is the famous Ancient RE1,RE3 in RBahn?",['RBahn'],"['RE1,RE3']"
+Basic-length Query,What is the overall span of Fürstenwerder - Woldegk from its source to mouth in Landstrassen2?,['Landstrassen2'],['Fürstenwerder - Woldegk']
+Basic-length Query,How long is the famous Ancient Jinianguan East Road in road?,['road'],['Jinianguan East Road']
+Basic-length Query,Can you tell me the distance of Landstrassen's Prieros - Hölzerner See?,['Landstrassen'],['Prieros - Hölzerner See']
+Distance Join Query,I'm interested in knowing the nearby RBahn are within 1 kilometer of each UBahnhof.,"['RBahn', 'UBahnhof']",[]
+Distance Join Query,Find the distance between Drahnsdorf to Museum für Naturkunde in Sehenswuerdreg.,['Sehenswuerdreg'],"['Drahnsdorf', 'Museum für Naturkunde']"
+Distance Join Query,What are poi within 2 kilometers of each WStrassen?,"['poi', 'WStrassen']",[]
+Distance Join Query,Identify the Sehenswuerdreg within 5 kilometers of each Sehenswuerdpoi.,"['Sehenswuerdreg', 'Sehenswuerdpoi']",[]
+Distance Join Query,Which Sehenswuerdreg are located within 4 kilometer of each Orte2?,"['Sehenswuerdreg', 'Orte2']",[]
+Distance Join Query,Can you recommend any Landstrassen within 1 kilometer of each UBahnhof?,"['Landstrassen', 'UBahnhof']",[]
+Nearest Neighbor Query,Locate the 2 closest WFlaechen to Grabow|(Mecklenburg).,['WFlaechen'],['Grabow|(Mecklenburg)']
+Nearest Neighbor Query,Determine the closest Kneipen to Walsleben.,['Kneipen'],['Walsleben']
+Nearest Neighbor Query,Please tell me the 5 Sehenswuerdpoi closest to Krossinsee.,['Sehenswuerdpoi'],['Krossinsee']
+Nearest Neighbor Query,Zoom in on the nearest point in RBahnhof from Messelpark.,['RBahnhof'],['Messelpark']
+Nearest Neighbor Query,Find the nearest region in Flaechen near Pyramidenstr. (Cottbus).,['Flaechen'],['Pyramidenstr. (Cottbus)']
+Nearest Neighbor Query,Please find the 2 Sehenswuerdreg nearest Oberlandstr..,['Sehenswuerdreg'],['Oberlandstr.']
+Nearest Neighbor Query,"Show me the closest point in Kneipen from RB13,RB51.",['Kneipen'],"['RB13,RB51']"
+Nearest Neighbor Query,What are the 4 nearest Flaechen to Schauspielhaus?,['Flaechen'],['Schauspielhaus']
+Nearest Neighbor Query,Identify the closest WFlaechen to Xinting Street.,['WFlaechen'],['Xinting Street']
+Nearest Neighbor Query,Locate the closest Flaechen to Invalidenstr..,['Flaechen'],['Invalidenstr.']
+Nearest Neighbor Query,Find which Sehenswuerdreg is nearest to Körnerpark.,['Sehenswuerdreg'],['Körnerpark']
+Range Query,Log all points in Kinos near Lessinghöhe within 3 km distance.,['Kinos'],['Lessinghöhe']
+Range Query,Discover all Sehenswuerdreg within a 4 - meter radius of Medewitz (Mark).,['Sehenswuerdreg'],['Medewitz (Mark)']
+Range Query,Track down all Sehenswuerdreg within a 2 - mile range of Gothensee.,['Sehenswuerdreg'],['Gothensee']
+Range Query,List all regions in Sehenswuerdreg that are within 3 kilometers from Otto-Braun-Str..,['Sehenswuerdreg'],['Otto-Braun-Str.']
+Range Query,I'm visiting the area and would like to know the Landstrassen on Mariannenplatz. Do you have any suggestions?,['Landstrassen'],['Mariannenplatz']
+Range Query,Tell me which road are on Reuterstr. (Neukölln)?,['road'],['Reuterstr. (Neukölln)']
+Range Query,Enumerate all Landstrassen within a range of 1 kilometers from Hornstr..,['Landstrassen'],['Hornstr.']
+Spatial Join Query,List the Sehenswuerdpoi situated in Städtisches Krankenhaus Friedrichshain.,['Sehenswuerdpoi'],['Städtisches Krankenhaus Friedrichshain']
+Spatial Join Query,Can you tell me which Flaechen are in the neighborhoods whose names start with the letter X in Sehenswuerdreg?,"['Flaechen', 'Sehenswuerdreg']",[]
+Spatial Join Query,Show me Flaechen which located within 4 miles of Botanischer Garten.,['Flaechen'],['Botanischer Garten']
+Spatial Join Query,What WFlaechen are there in each region of Sehenswuerdreg?,"['WFlaechen', 'Sehenswuerdreg']",[]
+Spatial Join Query,Please list the WFlaechen have an area of less than 3 square kilometers in each Flaechen.,"['WFlaechen', 'Flaechen']",[]
+Spatial Join Query,Locate the Sehenswuerdreg that are situated within the boundaries of Langer See (Dahme).,['Sehenswuerdreg'],['Langer See (Dahme)']
+Spatial Join Query,What WStrassen are there in each region of WFlaechen?,"['WStrassen', 'WFlaechen']",[]
+Spatial Join Query,What Plaetze are there in the region called Fennsee?,['Plaetze'],['Fennsee']
+Spatial Join Query,Find the WFlaechen situated within 1 kilometers of Museum für Naturkunde.,['WFlaechen'],['Museum für Naturkunde']

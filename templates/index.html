@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <link rel="icon" href="static\lion.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpaCor - A Tool for High-Quality Spatial NLQ Corpus Construction</title>
+  <link rel="stylesheet" href="static/main.css" />
+</head>
+
+<body>
+  <!-- 标题图片 -->
+  <!-- <div class="header">
+    <img src="static/title.png" alt="Title Image" class="title-image">
+  </div> -->
+
+  <div class="container">
+    <img src="static/title.png" alt="Title Image" class="title-image"
+      style="width: 60%; display: flex; justify-content: center; align-items: center;">
+    <!-- 第一部分：检测和修复模块 -->
+    <div class="section">
+      <h3>Auto Detection and Repair</h3>
+      <div class="section-content">
+        <div id="inputnav">
+          <select id="corpusSelect1">
+            <option value="berlintest">berlintest</option>
+          </select>
+          <input type="text" id="queryInput" placeholder="Input NLQ, such as 'Identify the nearest Fahre to Barby.'">
+          <input type="button" value="Submit" onclick="submitQuery()" style="width: 100px;">
+        </div>
+        <div class="dr-output" id="outputBox">
+          <!-- 返回的输出内容 -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 第二部分：语料生成模块 -->
+    <div class="section">
+      <h3>Template-based Corpus Generation</h3>
+      <div class="section-content">
+        <div id="corpusnav">
+          <select id="corpusSelect2">
+            <option value="berlintest">berlintest</option>
+          </select>
+          <select id="numSelect">
+            <option value="100">100</option>
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+            <option value="2000">2000</option>
+          </select>
+          <input type="button" value="Generate" onclick="submitCorpus()" style="width: 100px;">
+          <input type="button" value="Download CSV" onclick="downloadCSV()" style="width: 150px; margin-left: 50px;">
+        </div>
+        <div class="dr-output" id="generationBox">
+          <!-- 生成的内容在此处显示 -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 提交检测修复
+    function submitQuery() {
+      const queryInput = document.getElementById('queryInput').value;
+
+      if (!queryInput.trim()) {
+        alert("Please enter a query.");
+        return;
+      }
+
+      fetch('/detect_query', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ nlq: queryInput })
+      })
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('outputBox').innerText = data.result;
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          document.getElementById('outputBox').innerText = "An error occurred.";
+        });
+    }
+
+
+
+
+    // 提交生成语料查询
+    function submitCorpus() {
+      // 获取下拉框中的值
+      const corpus = document.getElementById('corpusSelect2').value;
+      const num = document.getElementById('numSelect').value;
+
+      // 向后端发送请求
+      fetch('/generate_corpus', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          corpus: corpus,
+          num: num
+        })
+      })
+        .then(response => response.json())
+        .then(data => {
+          // 将生成的内容插入到 generationBox 中
+          const generationBox = document.getElementById('generationBox');
+          generationBox.innerHTML = data.generatedContent.replace(/\n/g, '<br>');
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+
+
+
+
+    // 下载生成的内容为 CSV 文件
+    function downloadCSV() {
+      // 通过 GET 请求从 Flask 后端下载 CSV 文件
+      const url = '/download_csv';
+
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'SpaCorOutput.csv';  // 设置下载文件名
+      link.click();
+    }
+
+  </script>
+
+</body>
+
+</html>

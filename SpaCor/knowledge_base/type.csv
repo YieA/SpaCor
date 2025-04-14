@@ -1,0 +1,12 @@
+id,cat,abbreviation
+0,Range Query,rq
+1,Nearest Neighbor Query,nnq
+2,Basic-area Query,baq
+3,Basic-length Query,blq
+4,Basic-distance Query,bdq
+5,Basic-direction Query,dq
+6,Aggregation-count Query
+7,Aggregation-max Query
+8,Aggregation-sum Query
+9,Distance Join Query
+10,Spatial Join Query
