@@ -1,4 +1,4 @@
-# SpaCor: Natural Language Query Detection and Correction for Spatial Databases
+# SpaCor: A Tool for High-Quality Spatial NLQ Corpus Construction
 
 **SpaCor** is a tool designed for detecting, correcting and generating natural language queries over spatial databases. It integrates query detection, repair and generation into a unified framework, and supports both command-line and web-based interaction.
 
